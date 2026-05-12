@@ -1,7 +1,7 @@
 import streamlit as st
 
 # --- 1. PAGE & STATE CONFIGURATION ---
-st.set_page_config(page_title="FUOYE Digital OTP Lab", page_icon="🔐", layout="centered")
+st.set_page_config(page_title="One Time Pad Lab", page_icon="🔐", layout="centered")
 
 # Session state to sync data between Encrypt and Decrypt tabs
 if 'vault_cipher' not in st.session_state:
@@ -54,7 +54,7 @@ def engine_xor(text, key_string, mode='encrypt'):
 
 # --- 3. SIDEBAR NAVIGATION ---
 with st.sidebar:
-    st.title("🛡️ XOR OTP Console")
+    st.title("🛡️ OTP Console")
     st.write("**Lecturer:** DR. OMODUNBI")
     st.write("**Dept:** Computer Engineering")
     menu = st.radio("Navigation", [
